@@ -17,7 +17,7 @@ void* producer(void* arg) {
         }
 
         ready = 1;
-        std::cout << "Поставка! Сообщение отправлено!\n";
+        std::cout << "Сообщение отправлено!\n";
 
         pthread_cond_signal(&cond1);
         pthread_mutex_unlock(&lock);
@@ -35,7 +35,7 @@ void* consumer(void* arg) {
         }
 
         ready = 0;
-        std::cout << "Потребитель также обработал сообщение!\n";
+        std::cout << "Потребитель обработал сообщение!\n";
 
         pthread_mutex_unlock(&lock);
     }
