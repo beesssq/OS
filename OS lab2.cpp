@@ -87,7 +87,7 @@ int main() {
 			}
 		}
 
-		// some actions on the descriptor activity
+		
 		if (FD_ISSET(serverSocket, &fds)) {
 			int clientSocket = accept(serverSocket, NULL, NULL);
 			if (clientSocket != -1) {
@@ -103,7 +103,7 @@ int main() {
 			}
 		}
 
-		// for the main socket and for every established connection
+		
 		for (auto clientIt = clients.begin(); clientIt != clients.end();) {
 			int clientSocket = *clientIt;
 			if (FD_ISSET(clientSocket, &fds)) {
