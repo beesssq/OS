@@ -1,13 +1,13 @@
-#include <vector>       // для работы с векторами
-#include <signal.h>     // функции sigaction, sigprocmask, sig_atomic_t
-#include <sys/select.h> // функции fd_set, pselect
-#include <sys/types.h>  // типы данных
-#include <sys/socket.h> // Для работы с сокетами
-#include <netinet/in.h> // Для работы с IP-адресами и портами
-#include <unistd.h>     // Для системных вызовов
-#include <errno.h>      // Для проверки ошибок через errno
-#include <stdio.h>      // Для вывода сообщений на терминал
-#include <stdlib.h>     // Для exit()
+#include <vector>       
+#include <signal.h>      
+#include <sys/select.h>  
+#include <sys/types.h>   
+#include <sys/socket.h>  
+#include <netinet/in.h> 
+#include <unistd.h>      
+#include <errno.h>       
+#include <stdio.h>       
+#include <stdlib.h>     
 
 
 // Объявление обработчика сигнала
