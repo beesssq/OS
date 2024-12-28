@@ -3,7 +3,7 @@
 #include <linux/kernel.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Your Name");
+MODULE_AUTHOR("Name");
 MODULE_DESCRIPTION("A simple Linux kernel module for Tomsk State University");
 
 static int __init tsu_module_init(void) {
